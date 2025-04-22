@@ -332,6 +332,54 @@ body {
   text-align: center;
 }
 
+.footer p {
+  margin: 5px 0;
+}
+
+.credits {
+  font-size: 0.9rem;
+  color: var(--gold);
+  margin-top: 15px !important;
+}
+
+.credits a {
+  color: var(--gold);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.credits a:hover {
+  color: var(--dark-gold);
+}
+
+/* WhatsApp Button */
+.whatsapp-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25d366;
+  color: white;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+  z-index: 1000;
+}
+
+.whatsapp-button i {
+  font-size: 30px;
+}
+
+.whatsapp-button:hover {
+  transform: scale(1.1);
+  background-color: #128c7e;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
   .header .container {
@@ -390,5 +438,14 @@ body {
 
   .hero p {
     font-size: 1.2rem;
+  }
+
+  .whatsapp-button {
+    width: 50px;
+    height: 50px;
+  }
+
+  .whatsapp-button i {
+    font-size: 25px;
   }
 }
